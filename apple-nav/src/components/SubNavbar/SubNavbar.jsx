@@ -4,16 +4,16 @@ import styled from 'styled-components'
 const SubNavbar = () => {
   return (
     <SubNav>
-      <Temporary href="#">MacBook Air</Temporary>
-      <Temporary href="#">MacBook Pro</Temporary>
-      <Temporary href="#">iMac</Temporary>
-      <Temporary href="#">iMac Pro</Temporary>
-      <Temporary href="#">Mac Pro</Temporary>
-      <Temporary href="#">Mac mini</Temporary>
-      <Temporary href="#">Compare</Temporary>
-      <Temporary href="#">Pro Display XDR</Temporary>
-      <Temporary href="#">Accessories</Temporary>
-      <Temporary href="#">Mojave</Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/macbookair__ej39du0gz4uq_large.svg" /><span>MacBook Air</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/macbookpro__enfip2k1cxkm_large.svg" /><span>MacBook Pro</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/imac__dkswmjfqeziq_large.svg" /><span>iMac</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/imac_pro__eer4bfwlutme_large.svg" /><span>iMac Pro</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/mac_pro__bn92faz71k6a_large.svg" /><span>Mac Pro</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/macmini__c6u0it831y0y_large.svg" /><span>Mac mini</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/mac_comp__ee2pokmcxh26_large.svg" /><span>Compare</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/pro_display_xdr__do0vjpny1kqe_large.svg" /><span>Pro Display XDR</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/mac_acc__fy6vtx5eqoyi_large.svg" /><span>Accessories</span></Temporary>
+      <Temporary href="#"><img src="https://www.apple.com/v/mac/home/ah/images/familybrowser/mac_osx__dntc9ef2limq_large.svg" /><span>Mojave</span></Temporary>
     </SubNav>
   )
 }
@@ -21,6 +21,9 @@ const SubNavbar = () => {
 export default SubNavbar
 
 const SubNav = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: rgba(242,242,242,0.7);
   padding-top: 12px;
   padding-bottom: 12px;
@@ -31,7 +34,12 @@ const SubNav = styled.div`
 
 const Temporary = styled.a`
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
   margin-top: 3px;
   padding: 0;
   position: relative;
+  font-size: 11px;
+  width: 42px;
+  height: 54px;
 `
