@@ -1,9 +1,14 @@
 import React from 'react';
 
+// Components
+import Navbar from './components/Navbar/Navbar'
+import SubNavbar from './components/SubNavbar/SubNavbar'
+
 function App() {
   return (
     <div className="App">
-      <h1>Apple Nav</h1>
+      <Navbar />
+      <SubNavbar />
     </div>
   );
 }
