@@ -30,16 +30,18 @@ const SubNav = styled.div`
   text-align: center;
   width: 100%;
   height: 92px;
+  overflow: hidden;
 `
 
 const Temporary = styled.a`
   text-decoration: none;
   display: flex;
+  color: #111;
   flex-direction: column;
+  align-items: center;
   margin-top: 3px;
   padding: 0;
   position: relative;
   font-size: 11px;
-  width: 42px;
-  height: 54px;
+  overflow: hidden;
 `
