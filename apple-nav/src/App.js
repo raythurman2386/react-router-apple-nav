@@ -1,14 +1,15 @@
 import React from 'react';
+import { Route } from 'react-router-dom'
 
 // Components
 import Navbar from './components/Navbar/Navbar'
-import SubNavbar from './components/SubNavbar/SubNavbar'
+import Mac from './components/Mac'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <SubNavbar />
+      <Route path="/mac" component={Mac} />
     </div>
   );
 }
