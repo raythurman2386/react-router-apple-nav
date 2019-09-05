@@ -26,6 +26,7 @@ const MainNav = styled.div`
   color: white;
   font-family: Helvetica;
   font-size: 14px;
+  max-width: 1000px;
   width: 100%;
   background-color: #313131;
   display: flex;
